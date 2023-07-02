@@ -19,7 +19,7 @@ export const VideoCard = ({video:{id:{videoId},snippet}}) => {
                     {snippet?.title.slice(0,60) || demoVideoTitle.slice(0,60)}
                 </Typography>
             </Link>
-            <Link to={snippet?.channelId ? `channnel/${snippet?.channelId}`: demoChannelUrl} sx={{backgroundColor:"#1e1e1e",color:"#1e1e1e",textDecoration: "none"}}>
+            <Link to={snippet?.channelId ? `/channnel/${snippet?.channelId}`: demoChannelUrl} sx={{backgroundColor:"#1e1e1e",color:"#1e1e1e",textDecoration: "none"}}>
                 <Typography backgroundColor="#1e1e1e" variant='subtitle1' fontWeight="bold" color="#FFF" sx={{textDecoration: "none"}}>
                     {snippet?.channelTitle || demoVideoTitle}
                     <CheckCircle sx={{fontSize:12,color:"grey",ml:"5px"}}/>

@@ -30,4 +30,36 @@ body{
     color: white !important;
 }
   
+.player {
+    height: 77vh !important;
+    width: 100% !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+  }
   
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 113, 113);
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  @media screen and (max-width: 600px) {
+
+    .react-player {
+      height: 45vh !important;
+    }
+    .searchbar{
+      width:200px;
+    }
+  }
+
+  @media screen and (max-width:800px){
+    .copyright{
+      display:none !important;
+    }
+  }
