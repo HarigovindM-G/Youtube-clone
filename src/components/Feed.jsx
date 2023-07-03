@@ -52,7 +52,6 @@ export const Feed = () => {
           {selectedCategory}
           <span style={{ color: "red", marginLeft: "5px" }}>videos</span>
         </Typography>
-        {console.log(videos)}
         <Videos videos={videos} />
       </Box>
     </Stack>
